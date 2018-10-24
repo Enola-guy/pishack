@@ -1,7 +1,7 @@
 # pishack
 sublime is love
 
-In keybinding
+Add in keybinding :
 ```
 [
 	{ "keys": ["ctrl+d"], "command": "replacer" }
