@@ -1,6 +1,5 @@
 import sublime
 import sublime_plugin
-import re
 
 
 class ReplacerCommand(sublime_plugin.TextCommand):
@@ -10,5 +9,6 @@ class ReplacerCommand(sublime_plugin.TextCommand):
         for line in self.text.split("\n\n"):
             parsed_urls.append(line.strip())
         text = '\n'.join(parsed_urls)
+        #uncomment to have it clean AND pasted
         #self.view.insert(edit, 0, text)
         sublime.set_clipboard(text)
